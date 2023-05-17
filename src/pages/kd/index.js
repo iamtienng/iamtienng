@@ -16,10 +16,10 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "Home", href: "/", current: false },
-  { name: "Computer Science", href: "/cs", current: false },
-  { name: "Game Criticism", href: "/gc", current: false },
-  { name: "Keycap Designing", href: "/kd", current: true },
+  { name: "Home", href: "/iamtienng/", current: false },
+  { name: "Computer Science", href: "/iamtienng/cs", current: false },
+  { name: "Game Criticism", href: "/iamtienng/gc", current: false },
+  { name: "Keycap Designing", href: "/iamtienng/kd", current: true },
 ];
 
 function classNames(...classes) {
