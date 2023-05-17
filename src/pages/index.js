@@ -1,5 +1,3 @@
-import Script from "next/script";
-
 import { useEffect } from "react";
 import { FaGamepad, FaKeyboard, FaCodepen } from "react-icons/fa";
 
@@ -43,7 +41,6 @@ export default function Home() {
   return (
     <div>
       <SectionHeader title="i am Tien Nguyen" favIconUrl="/favicon.ico" />
-      <Script src="/theme.js" />
       <main className=" bg-white px-10 dark:bg-gray-900 ">
         <Navigation navigation={navigation} />
         <section>
