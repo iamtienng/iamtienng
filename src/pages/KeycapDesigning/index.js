@@ -5,18 +5,10 @@ import Script from "next/script";
 import Navigation from "@/components/Navigation";
 
 const navigation = [
-  { name: "Home", href: "/iamtienng/", current: false },
-  {
-    name: "Computer Science",
-    href: "/iamtienng/ComputerScience",
-    current: false,
-  },
-  { name: "Game Criticism", href: "/iamtienng/GameCriticism", current: false },
-  {
-    name: "Keycap Designing",
-    href: "/iamtienng/KeycapDesigning",
-    current: true,
-  },
+  { name: "Home", href: "/", current: false },
+  { name: "Computer Science", href: "/ComputerScience", current: false },
+  { name: "Game Criticism", href: "/GameCriticism", current: false },
+  { name: "Keycap Designing", href: "/KeycapDesigning", current: true },
 ];
 
 export default function KeycapDesigning() {
