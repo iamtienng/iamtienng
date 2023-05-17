@@ -199,7 +199,7 @@ export default function Home() {
         <section>
           <div className="text-center p-5 py-5">
             <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
-              Nguyen Minh Tien
+              Tien M. Nguyen
             </h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
               A developer, a gamer and a keyboard lover.
