@@ -6,12 +6,20 @@ import Navigation from "@/components/Navigation";
 
 const navigation = [
   { name: "Home", href: "/iamtienng/", current: false },
-  { name: "Computer Science", href: "/iamtienng/cs", current: true },
-  { name: "Game Criticism", href: "/iamtienng/gc", current: false },
-  { name: "Keycap Designing", href: "/iamtienng/kd", current: false },
+  {
+    name: "Computer Science",
+    href: "/iamtienng/ComputerScience",
+    current: true,
+  },
+  { name: "Game Criticism", href: "/iamtienng/GameCriticism", current: false },
+  {
+    name: "Keycap Designing",
+    href: "/iamtienng/KeycapDesigning",
+    current: false,
+  },
 ];
 
-export default function cs() {
+export default function ComputerScience() {
   useEffect(() => {
     // Load preferred theme from local storage
     const preferredTheme = localStorage.getItem("theme");

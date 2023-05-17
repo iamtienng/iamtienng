@@ -34,6 +34,7 @@ function FieldCard({
         <p className="py-2">{fieldDescription}</p>
         <h3 className="text-lg font-medium pt-8 pb-2">{fieldListTitle}</h3>
         {fieldList.map((listItem) => (
+          // eslint-disable-next-line react/jsx-key
           <p className="text-gray-800 py-1">{listItem}</p>
         ))}
       </div>

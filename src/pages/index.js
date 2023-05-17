@@ -13,9 +13,17 @@ import FieldCard from "@/components/FieldCard";
 
 const navigation = [
   { name: "Home", href: "/iamtienng/", current: true },
-  { name: "Computer Science", href: "/iamtienng/cs", current: false },
-  { name: "Game Criticism", href: "/iamtienng/gc", current: false },
-  { name: "Keycap Designing", href: "/iamtienng/kd", current: false },
+  {
+    name: "Computer Science",
+    href: "/iamtienng/ComputerScience",
+    current: false,
+  },
+  { name: "Game Criticism", href: "/iamtienng/GameCriticism", current: false },
+  {
+    name: "Keycap Designing",
+    href: "/iamtienng/KeycapDesigning",
+    current: false,
+  },
 ];
 
 export default function Home() {
@@ -73,7 +81,7 @@ export default function Home() {
           <div className="lg:flex gap-10 justify-around">
             <FieldCard
               icon=<FaCodepen className="relative text-5xl" />
-              fieldHref="/iamtienng/cs"
+              fieldHref="/iamtienng/ComputerScience"
               fieldTitle="Computer Science"
               fieldDescription="With my strong passion for problem solving in general and programming skills in particular, I firmly believe that my ability to cooperate with you to create the foundation for the future world."
               fieldListTitle="Skills"
@@ -86,7 +94,7 @@ export default function Home() {
             />
             <FieldCard
               icon=<FaKeyboard className="text-5xl" />
-              fieldHref="/iamtienng/gc"
+              fieldHref="/iamtienng/GameCriticism"
               fieldTitle="Game Criticism"
               fieldDescription="Right now, I am not aiming to write professional reviews. This will be where I nurture and develop an awareness of art specifically in the game. To me, games have a potential that goes beyond movies and books."
               fieldListTitle="Topics I will write about"
@@ -99,7 +107,7 @@ export default function Home() {
             />
             <FieldCard
               icon=<FaGamepad className="text-5xl" />
-              fieldHref="/iamtienng/kd"
+              fieldHref="/iamtienng/KeycapDesigning"
               fieldTitle="Keycap Designing"
               fieldDescription="From a passion for the beauty of custom high end mechanical keyboards. The world of keyboard is where I apply my knowledge of art to have the opportunity to create real creation."
               fieldListTitle="Tools I use"
