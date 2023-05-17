@@ -10,7 +10,7 @@ import ImageContainer from "@/components/ImageContainer";
 import FieldCard from "@/components/FieldCard";
 
 const navigation = [
-  { name: "Home", href: "/", current: true },
+  { name: "About", href: "/", current: true },
   { name: "Computer Science", href: "/ComputerScience", current: false },
   { name: "Game Criticism", href: "/GameCriticism", current: false },
   { name: "Keycap Designing", href: "/KeycapDesigning", current: false },
@@ -40,8 +40,8 @@ export default function Home() {
 
   return (
     <div>
-      <SectionHeader title="i am Tien Nguyen" favIconUrl="/favicon.ico" />
-      <main className=" bg-white px-10 dark:bg-gray-900 ">
+      <SectionHeader title="I am Tien Nguyen" favIconUrl="/favicon.ico" />
+      <main>
         <Navigation navigation={navigation} />
         <section>
           <div className="text-center p-5 py-5">

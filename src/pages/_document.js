@@ -9,7 +9,7 @@ export default function Document() {
           rel="stylesheet"
         />
       </Head>
-      <body className="font-poppins">
+      <body className="font-poppins bg-white px-10 dark:bg-gray-900">
         <Main />
         <NextScript />
       </body>
