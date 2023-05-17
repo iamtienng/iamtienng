@@ -32,7 +32,10 @@ export default function kd() {
       <Head>
         <title>i am Tien Nguyen</title>
         <meta name="description" content="iamtienng corner" />
-        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="icon"
+          href="https://raw.githubusercontent.com/iamtienng/iamtienng/master/public/favicon.ico"
+        />
       </Head>
       <Script src="/theme.js" />
       <main className=" bg-white px-10 dark:bg-gray-900 ">

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Script from "next/script";
@@ -26,6 +27,27 @@ function classNames(...classes) {
 }
 
 export default function Home() {
+  useEffect(() => {
+    // Load preferred theme from local storage
+    const preferredTheme = localStorage.getItem("theme");
+
+    if (preferredTheme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else if (preferredTheme === "light") {
+      document.documentElement.classList.remove("dark");
+    } else {
+      // If no theme preference is set, use the automatic theme based on user's system preference
+      if (
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    }
+  }, []);
+
   return (
     <div>
       <Head>
@@ -139,7 +161,7 @@ export default function Home() {
                           </Menu.Item>
                           <Menu.Item
                             onClick={() => {
-                              localStorage.removeItem("theme");
+                              localStorage.theme = "automatic";
                               window.matchMedia("(prefers-color-scheme: dark)")
                                 .matches
                                 ? document.documentElement.classList.add("dark")
