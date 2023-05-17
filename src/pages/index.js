@@ -5,11 +5,13 @@ import Script from "next/script";
 import { AiFillLinkedin, AiFillYoutube, AiFillInstagram } from "react-icons/ai";
 import { FaGamepad, FaKeyboard, FaCodepen } from "react-icons/fa";
 import { BsFillMoonStarsFill } from "react-icons/bs";
+
 import iamtienng from "../../public/iamtienng_web.png";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
+
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
@@ -236,7 +238,7 @@ export default function Home() {
             </p>
           </div>
           <div className="lg:flex gap-10 justify-around">
-            <Link href="/development" className="">
+            <Link href="/cs">
               <div className="transition ease-in-out delay-150 hover:-translate-y-1 bg-gray-200 hover:scale-105 hover:bg-white dark:hover:bg-white duration-300 text-center shadow-lg p-10 rounded-xl my-10  dark:bg-gray-200 flex-1">
                 <FaCodepen className="relative text-5xl" />
                 <h3 className="text-lg font-medium pt-8 pb-2  ">
@@ -257,7 +259,7 @@ export default function Home() {
                 <p className="text-gray-800 py-1">Organized work style</p>
               </div>
             </Link>
-            <Link href="/game">
+            <Link href="/gc">
               <div className="transition ease-in-out delay-150 hover:-translate-y-1 bg-gray-200 hover:scale-105 hover:bg-white dark:hover:bg-white duration-300 text-center shadow-lg p-10 rounded-xl my-10  dark:bg-gray-200 flex-1">
                 <FaGamepad className="text-5xl" />
                 <h3 className="text-lg font-medium pt-8 pb-2 ">
@@ -278,7 +280,7 @@ export default function Home() {
                 <p className="text-gray-800 py-1">Game Engine Development</p>
               </div>
             </Link>
-            <Link href="/keyboard">
+            <Link href="/kd">
               <div className="transition ease-in-out delay-150 hover:-translate-y-1 bg-gray-200 hover:scale-105 hover:bg-white dark:hover:bg-white duration-300 text-center shadow-lg p-10 rounded-xl my-10  dark:bg-gray-200 flex-1">
                 <FaKeyboard className="text-5xl" />
                 <h3 className="text-lg font-medium pt-8 pb-2 ">
