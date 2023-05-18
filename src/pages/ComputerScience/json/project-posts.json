@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "title": "First Blog Post",
+        "summary": "Lorem ipsum dolor sit amet..."
+    },
+    {
+        "id": 2,
+        "title": "Second Blog Post",
+        "summary": "Lorem ipsum dolor sit amet..."
+    },
+    {
+        "id": 3,
+        "title": "Second Blog Post",
+        "summary": "Lorem ipsum dolor sit amet..."
+    },
+    {
+        "id": 4,
+        "title": "Second Blog Post",
+        "summary": "Lorem ipsum dolor sit amet..."
+    }
+]

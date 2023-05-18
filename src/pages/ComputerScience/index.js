@@ -1,11 +1,13 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 import iamtienng_image from "../../../public/iamtienng_web.png";
+import blogPostsData from "./json/project-posts.json";
 
 import SectionHeader from "@/components/SectionHeader";
 import Navigation from "@/components/Navigation";
 import SocialLinks from "@/components/SocialLinks";
 import ImageContainer from "@/components/ImageContainer";
+import BlogList from "@/components/BlogList";
 
 const navigation = [
   { name: "About", href: "/", current: false },
@@ -15,6 +17,8 @@ const navigation = [
 ];
 
 export default function ComputerScience() {
+  const [blogPosts, setBlogPosts] = useState([]);
+
   useEffect(() => {
     // Load preferred theme from local storage
     const preferredTheme = localStorage.getItem("theme");
@@ -34,6 +38,8 @@ export default function ComputerScience() {
         document.documentElement.classList.remove("dark");
       }
     }
+
+    setBlogPosts(blogPostsData);
   }, []);
 
   return (
@@ -59,9 +65,7 @@ export default function ComputerScience() {
           </div>
         </section>
         <section className="py-10">
-          <div>
-            <p>Updating</p>
-          </div>
+          <BlogList blogPostsData={blogPosts} />
         </section>
       </main>
     </div>
