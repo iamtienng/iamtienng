@@ -60,12 +60,11 @@ export default function ComputerScience() {
               Love writing about the great things in the video games I play.
               Sometimes I also design keycaps for mechanical keyboards.
             </p>
-            <SocialLinks />
             <ImageContainer src={iamtienng_image} alt="alt" />
           </div>
         </section>
         <section className="py-10">
-          <BlogList blogPostsData={blogPosts} />
+          <BlogList blogPostsData={blogPosts} field="ComputerScience" />
         </section>
       </main>
     </div>
