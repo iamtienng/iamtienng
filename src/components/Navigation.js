@@ -32,7 +32,7 @@ const Navigation = ({ navigation }) => {
                         className={combineClasses(
                           item.current
                             ? "bg-gray-900 text-white -translate-y-1 dark:bg-gray-50 dark:text-gray-900"
-                            : "transition ease-in-out delay-150 hover:-translate-y-1 text-gray-700 hover:bg-gray-300 hover:text-gray-950 dark:text-white dark:hover:bg-gray-700",
+                            : "transition ease-in-out hover:-translate-y-1 text-gray-700 hover:bg-gray-300 hover:text-gray-950 dark:text-white dark:hover:bg-gray-700",
                           "rounded-md px-3 py-2 text-sm font-medium"
                         )}
                         aria-current={item.current ? "page" : undefined}

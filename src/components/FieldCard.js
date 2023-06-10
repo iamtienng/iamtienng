@@ -28,14 +28,16 @@ function FieldCard({
     //     </div>
     // </Link>
     <Link href={fieldHref}>
-      <div className="transition ease-in-out delay-150 hover:-translate-y-1 bg-gray-200 hover:scale-105 hover:bg-gray-100 dark:hover:bg-gray-100 duration-300 text-center shadow-lg p-10 rounded-xl my-10  dark:bg-gray-200 flex-1">
+      <div className="transition ease-in-out hover:-translate-y-1 bg-gray-200 hover:scale-105 hover:bg-gray-100 dark:hover:bg-gray-100 duration-300 text-center shadow-lg p-10 rounded-xl my-10  dark:bg-gray-200 flex-1">
         {icon}
         <h3 className="text-lg font-medium pt-8 pb-2  ">{fieldTitle}</h3>
         <p className="py-2">{fieldDescription}</p>
         <h3 className="text-lg font-medium pt-8 pb-2">{fieldListTitle}</h3>
         {fieldList.map((listItem) => (
           // eslint-disable-next-line react/jsx-key
-          <p className="text-gray-800 py-1">{listItem}</p>
+          <p className="text-gray-800 py-1" key={fieldHref}>
+            {listItem}
+          </p>
         ))}
       </div>
     </Link>

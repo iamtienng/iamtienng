@@ -40,7 +40,7 @@ export default function Home() {
 
   return (
     <div>
-      <SectionHeader title="I am Tien Nguyen" favIconUrl="/favicon.ico" />
+      <SectionHeader title="I am Tien Nguyen" />
       <main>
         <Navigation navigation={navigation} />
         <section>
@@ -61,12 +61,6 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <div>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              For a more detailed and clear view of the field you are interested
-              in me, please click on one of the three fields below.
-            </p>
-          </div>
           <div className="lg:flex gap-10 justify-around">
             <FieldCard
               icon=<FaCodepen className="relative text-5xl" />
@@ -82,7 +76,7 @@ export default function Home() {
               ]}
             />
             <FieldCard
-              icon=<FaKeyboard className="text-5xl" />
+              icon=<FaGamepad className="text-5xl" />
               fieldHref="/GameCriticism"
               fieldTitle="Game Criticism"
               fieldDescription="Right now, I am not aiming to write professional reviews. This will be where I nurture and develop an awareness of art specifically in the game. To me, games have a potential that goes beyond movies and books."
@@ -95,7 +89,7 @@ export default function Home() {
               ]}
             />
             <FieldCard
-              icon=<FaGamepad className="text-5xl" />
+              icon=<FaKeyboard className="text-5xl" />
               fieldHref="/KeycapDesigning"
               fieldTitle="Keycap Designing"
               fieldDescription="From a passion for the beauty of custom high end mechanical keyboards. The world of keyboard is where I apply my knowledge of art to have the opportunity to create real creation."

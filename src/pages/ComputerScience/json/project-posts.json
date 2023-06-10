@@ -1,31 +1,31 @@
 [
     {
         "id": 1,
-        "title": "First Blog Post",
+        "title": "1 Blog Post",
         "summary": "Lorem ipsum dolor sit amet...",
         "image": "/posts/01.jpg"
     },
     {
         "id": 2,
-        "title": "Second Blog Post",
+        "title": "2 Blog Post",
         "summary": "Lorem ipsum dolor sit amet...",
         "image": "/posts/02.jpg"
     },
     {
         "id": 3,
-        "title": "Second Blog Post",
+        "title": "3 Blog Post",
         "summary": "Lorem ipsum dolor sit amet...",
         "image": "/posts/03.jpg"
     },
     {
         "id": 4,
-        "title": "Second Blog Post",
+        "title": "4 Blog Post",
         "summary": "Lorem ipsum dolor sit amet...",
         "image": "/posts/04.jpg"
     },
     {
         "id": 5,
-        "title": "Second Blog Post",
+        "title": "5 Blog Post",
         "summary": "Lorem ipsum dolor sit amet...",
         "image": "/posts/05.jpg"
     },
@@ -37,6 +37,18 @@
     },
     {
         "id": 7,
+        "title": "7 Blog Post",
+        "summary": "Lorem ipsum dolor sit amet...",
+        "image": "/posts/07.jpg"
+    },
+    {
+        "id": 8,
+        "title": "7 Blog Post",
+        "summary": "Lorem ipsum dolor sit amet...",
+        "image": "/posts/07.jpg"
+    },
+    {
+        "id": 9,
         "title": "7 Blog Post",
         "summary": "Lorem ipsum dolor sit amet...",
         "image": "/posts/07.jpg"
