@@ -48,7 +48,7 @@ export default function PostPage({ post }: { post: MDXPost }) {
   }, []);
   return (
     <>
-      <SectionHeader title={post.meta.title} favIconUrl="/favicon.ico" />
+      <SectionHeader title={post.meta.title} />
       <main>
         <Navigation navigation={navigation} />
         <div className="max-w-5xl mx-auto py-10 px-4">

@@ -41,7 +41,7 @@ export default function ComputerScience() {
 
   return (
     <div>
-      <SectionHeader title="I am Tien Nguyen" favIconUrl="/favicon.ico" />
+      <SectionHeader title="I am Tien Nguyen" />
       <main>
         <Navigation navigation={navigation} />
         <section>
