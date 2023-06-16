@@ -2,7 +2,7 @@ import { Disclosure, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import ThemeMenu from "./ThemeMenu";
 
-import { combineClasses } from "../utils";
+import { combineClasses } from "@/utils";
 
 const Navigation = ({ navigation }) => {
   return (

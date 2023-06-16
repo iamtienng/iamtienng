@@ -5,13 +5,13 @@ import { serialize } from "next-mdx-remote/serialize";
 import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeHighlight from "rehype-highlight";
-import { getPostFromSlug, getSlugs, PostMeta } from "../../api/api";
-import YouTube from "../../../components/Youtube";
+import { getPostFromSlug, getSlugs, PostMeta } from "@/pages/api/api";
+import YouTubeComp from "@/components/YoutubeComp";
 import "highlight.js/styles/atom-one-dark.css";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
-import SectionHeader from "../../../components/SectionHeader";
-import Navigation from "../../../components/Navigation";
+import SectionHeader from "@/components/SectionHeader";
+import Navigation from "@/components/Navigation";
 
 const navigation = [
   { name: "About", href: "/", current: false },
@@ -57,7 +57,7 @@ export default function PostPage({ post }: { post: MDXPost }) {
           </h2>
           <h1></h1>
           <div className="dark:prose-invert dark:text-white">
-            <MDXRemote {...post.source} components={{ YouTube, Image }} />
+            <MDXRemote {...post.source} components={{ YouTubeComp, Image }} />
           </div>
         </div>
       </main>

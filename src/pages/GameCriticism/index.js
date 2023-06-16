@@ -1,13 +1,9 @@
 import { useEffect, useState } from "react";
 
-import iamtienng_image from "../../../public/iamtienng_web.png";
 import blogPostsData from "./contents/list/posts-list.json";
 
-import SectionHeader from "../../components/SectionHeader";
-import Navigation from "../../components/Navigation";
-import SocialLinks from "../../components/SocialLinks";
-import ImageContainer from "../../components/ImageContainer";
-import BlogList from "../../components/BlogList";
+import SectionHeader from "@/components/SectionHeader";
+import Navigation from "@/components/Navigation";
 
 const navigation = [
   { name: "About", href: "/", current: false },

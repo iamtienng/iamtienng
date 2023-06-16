@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 
 import blogPostsData from "./contents/list/posts-list.json";
 
-import SectionHeader from "../../components/SectionHeader";
-import Navigation from "../../components/Navigation";
-import BlogList from "../../components/BlogList";
+import SectionHeader from "@/components/SectionHeader";
+import Navigation from "@/components/Navigation";
+import BlogList from "@/components/BlogList";
 
 const navigation = [
   { name: "About", href: "/", current: false },
