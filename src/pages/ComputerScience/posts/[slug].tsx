@@ -6,7 +6,7 @@ import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeHighlight from "rehype-highlight";
 import { getPostFromSlug, getSlugs, PostMeta } from "@/pages/api/api";
-import YouTubeComp from "@/components/YoutubeComp";
+import YouTube from "@/components/YouTube";
 import "highlight.js/styles/atom-one-dark.css";
 import { useEffect } from "react";
 
@@ -57,7 +57,7 @@ export default function PostPage({ post }: { post: MDXPost }) {
           </h2>
           <h1></h1>
           <div className="dark:prose-invert dark:text-white">
-            <MDXRemote {...post.source} components={{ YouTubeComp, Image }} />
+            <MDXRemote {...post.source} components={{ YouTube, Image }} />
           </div>
         </div>
       </main>
