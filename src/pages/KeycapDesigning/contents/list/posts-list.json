@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "How to use Reduce in JavaScript",
+        "summary": "The reduce function of an array is one of the most versatile functions in JavaScript. With it you can accomplish a lot of the functions from array and math objects.",
+        "image": "/posts/01.jpg",
+        "url": "posts/reduce"
+    },
+    {
+        "id": 2,
+        "title": "How to use Reduce in JavaScript",
+        "summary": "The reduce function of an array is one of the most versatile functions in JavaScript. With it you can accomplish a lot of the functions from array and math objects.",
+        "image": "/posts/01.jpg",
+        "url": "posts/reduce-2"
+    },
+    {
+        "id": 3,
+        "title": "How Does SWR Work?",
+        "summary": "SWR is a great package from Zeit to help make it easier to fetch remote data with hooks. It is based on the stale-while-revalidate RFC.",
+        "image": "/posts/02.jpg",
+        "url": "posts/swr"
+    }
+]

@@ -3,11 +3,11 @@ import { FaGamepad, FaKeyboard, FaCodepen } from "react-icons/fa";
 
 import iamtienng_image from "../../public/iamtienng_web.png";
 
-import Navigation from "../components/Navigation";
-import SectionHeader from "../components/SectionHeader";
-import SocialLinks from "../components/SocialLinks";
-import ImageContainer from "../components/ImageContainer";
-import FieldCard from "../components/FieldCard";
+import Navigation from "@/components/Navigation";
+import SectionHeader from "@/components/SectionHeader";
+import SocialLinks from "@/components/SocialLinks";
+import ImageContainer from "@/components/ImageContainer";
+import FieldCard from "@/components/FieldCard";
 
 const navigation = [
   { name: "About", href: "/", current: true },
